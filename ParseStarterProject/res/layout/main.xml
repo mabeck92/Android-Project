@@ -1,12 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/Frage"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello" />
+    <TextView
+        android:id="@+id/Antwort_A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Frage"
+        android:paddingRight="5dp"
+        android:text="@string/hello"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false" />
+    <TextView
+        android:id="@+id/Antwort_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/Antwort_A"
+        android:layout_below="@+id/Frage"
+        android:paddingRight="5dp"
+        android:text="@string/hello"/>
+    <TextView
+        android:id="@+id/Antwort_C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Antwort_A"
+        android:paddingRight="5dp"
+        android:text="@string/hello"
+        />
+    <TextView
+        android:id="@+id/Antwort_D"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/Antwort_C"
+        android:layout_below="@+id/Antwort_B"
+        android:paddingRight="5dp"
+        android:text="@string/hello"/>
 
-</LinearLayout>
+
+</RelativeLayout>
